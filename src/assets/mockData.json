@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "title": "Agenda 2024",
+        "price": 18500.00,
+        "description": "Agenda semana a la vista, ideal para organizar tus días.",
+        "category": "agendas",
+        "picture": "./artimg/agenda1.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 140
+        }
+    },
+    {
+        "id": 2,
+        "title": "Agenda perpetua",
+        "price": 18500.00,
+        "description": "Agenda semana a la vista, perpetua, iníciala cuando quieras.",
+        "category": "agendas",
+        "picture": "./artimg/agenda3.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 140
+        }
+    },
+    {
+        "id": 3,
+        "title": "Lápiz plantable",
+        "price": 1000.00,
+        "description": "Lápiz clásico, ideal para escribir y dibujar con precisión, con semillas para plantar.",
+        "category": "accesorios",
+        "picture": "./artimg/lapizplantable.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 140
+        }
+    },
+    {
+        "id": 4,
+        "title": "Anotador rayado",
+        "price": 5500.00,
+        "description": "Anotador de notas, perfecto para tus ideas y recordatorios.",
+        "category": "anotadores",
+        "picture": "./artimg/anotadorray.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 140
+        }
+    },
+    {
+        "id": 5,
+        "title": "Anotador cuadriculado",
+        "price": 5500.00,
+        "description": "Anotador de notas, perfecto para tus ideas y recordatorios.",
+        "category": "anotadores",
+        "picture": "./artimg/anotadorcuad.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 140
+        }
+    },
+    {
+        "id": 6,
+        "title": "Cuaderno A5 rayado",
+        "price": 5000.00,
+        "description": "Cuaderno de 100 hojas con papel ecológico rayado, perfecto para tomar apuntes.",
+        "category": "cuadernos",
+        "picture": "./artimg/cuadernoA5ray.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 140
+        }
+    },
+    {
+        "id": 7,
+        "title": "Anotador con espiral 10x15",
+        "price": 6500.00,
+        "description": "Anotador de notas con tapa dura, perfecto para tus ideas y recordatorios.",
+        "category": "anotadores",
+        "picture": "./artimg/anotador1015.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 140
+        }
+    },
+    {
+        "id": 8,
+        "title": "Pack Anotadores con imán",
+        "price": 4250.00,
+        "description": "Bloc de notas con hojas rayadas y cuadriculadas, ideal para la heladera y no olvidarte nada.",
+        "category": "anotadores",
+        "picture": "./artimg/anotadorIman.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 140
+        }
+    },
+    {
+        "id": 9,
+        "title": "BOX 1",
+        "price": 34000.99,
+        "description": "Caja con productos para regalar en cualquier ocasión, contiene 6 productos y una linda presentación.",
+        "category": "cuadernos",
+        "picture": "./artimg/box1.png",
+        "rating": {
+            "rate": 4.7,
+            "count": 95
+        }
+    },
+    {
+        "id": 10,
+        "title": "BOX 2",
+        "price": 34000.99,
+        "description": "Caja con productos para regalar en cualquier ocasión, contiene 6 productos y una linda presentación.",
+        "category": "cuadernos",
+        "picture": "./artimg/box2.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 140
+        }
+    },
+    {
+        "id": 11,
+        "title": "Cuaderno con espiral A5 liso",
+        "price": 1200.00,
+        "description": "Cuaderno tapa dura con espiral, hojas lisas, ideal para dibujar.",
+        "category": "cuadernos",
+        "picture": "./artimg/cuadernoA5liso.png",
+        "rating": {
+            "rate": 4.8,
+            "count": 200
+        }
+    },
+    {
+        "id": 12,
+        "title": "Cuaderno con espiral A5 rayado",
+        "price": 1200.00,
+        "description": "Cuaderno tapa dura con espiral, hojas rayadas, ideal para apuntes y notas.",
+        "category": "cuadernos",
+        "picture": "./artimg/cuadernoA5ray.png",
+        "rating": {
+            "rate": 4.0,
+            "count": 300
+        }
+    },
+    {
+        "id": 13,
+        "title": "Cuaderno tapa blanda cuadriculado",
+        "price": 2500.00,
+        "description": "Cuaderno tapa blanda, ideal para llevar a cualquier lugar en la mochila, cartera o el auto.",
+        "category": "cuadernos",
+        "picture": "./artimg/cuadernotbcuadriculado.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 160
+        }
+    },
+    {
+        "id": 14,
+        "title": "Cuaderno tapa blanda rayado",
+        "price": 2500.00,
+        "description": "Cuaderno tapa blanda, ideal para llevar a cualquier lugar en la mochila, cartera o el auto.",
+        "category": "cuadernos",
+        "picture": "./artimg/cuadernoA5ray.png",
+        "rating": {
+            "rate": 4.5,
+            "count": 180
+        }
+    },
+    {
+        "id": 15,
+        "title": "Cuaderno universitario",
+        "price": 2500.00,
+        "description": "Cuaderno tapa blanda, con espiral tamaño A4, perfecto para llevar a la escuela o facultad.",
+        "category": "cuadernos",
+        "picture": "./artimg/cuadernouniversitario.png",
+        "rating": {
+            "rate": 4.1,
+            "count": 200
+        }
+    },
+    {
+        "id": 16,
+        "title": "Lapicera de madera",
+        "price": 6.75,
+        "description": "Lapicera retráctil color negro.",
+        "category": "accesorios",
+        "picture": "./artimg/lapicera.png",
+        "rating": {
+            "rate": 4.6,
+            "count": 110
+        }
+    },
+    {
+        "id": 17,
+        "title": "Maceta biodegradable",
+        "price": 4.00,
+        "description": "Macetas artesanales, realizadas con papel reciclado.",
+        "category": "accesorios",
+        "picture": "./artimg/maceta viodegradable.png",
+        "rating": {
+            "rate": 4.0,
+            "count": 220
+        }
+    },
+    {
+        "id": 18,
+        "title": "Pack cuadernos A5 tapa dura",
+        "price": 14.99,
+        "description": "Tres cuadernos A5 tapa dura, con espiral, rayado, cuadriculado y liso.",
+        "category": "cuadernos",
+        "picture": "./artimg/packcuadernoa5.png",
+        "rating": {
+            "rate": 4.4,
+            "count": 130
+        }
+    },
+    {
+        "id": 19,
+        "title": "Pack Full",
+        "price": 5.50,
+        "description": "Set de 3 cuadernos A5, dos anotadores tapa dura y un anotador tapa blanda.",
+        "category": "cuadernos",
+        "picture": "./artimg/setfull.png",
+        "rating": {
+            "rate": 4.5,
+            "count": 170
+        }
+    },
+    {
+        "id": 20,
+        "title": "Stickers Florales",
+        "price": 8.25,
+        "description": "Pack de stickers para decorar.",
+        "category": "accesorios",
+        "picture": "./artimg/stickerfloral.png",
+        "rating": {
+            "rate": 4.3,
+            "count": 140
+        }
+    }
+]

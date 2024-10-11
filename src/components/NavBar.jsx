@@ -1,21 +1,64 @@
-import React from 'react';
-import CartWidget from './CartWidget';
-import Logo from '../assets/logo.png'; 
-import '../styles/navbar.css'; 
+import React from "react";
+import styles from "../styles/navbar.css";
+import { Link, NavLink } from "react-router-dom";
 
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <img src={Logo} alt="Logo FiloArt" className="logo" />
-      <ul className="categories">
-        <li><a href="#agendas">Agendas</a></li>
-        <li><a href="#cuadernos">Cuadernos</a></li>
-        <li><a href="#anotadores">Anotadores</a></li>
-        <li><a href="#accesorios">Accesorios</a></li>
-      </ul>
-      <CartWidget />
-    </nav>
-  );
-};
+const NavBar = () => {
+    return (
+        <nav>
+            <ul className={styles.list}>
+                <li>
+                    <NavLink
+                        className={ ({ isActive }) => {
+                            return isActive ? styles.isActive : styles.notActive
+                        }}
+                        to={"/"}
+                    >
+                        Home
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        className={ ({ isActive }) => {
+                            return isActive ? styles.isActive : styles.notActive
+                        }}
+                        to={"/category/agendas"}
+                    >
+                        Agendas
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        className={ ({ isActive }) => {
+                            return isActive ? styles.isActive : styles.notActive
+                        }}
+                        to={"/category/cuadernos"}
+                    >
+                        Cuadernos
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        className={ ({ isActive }) => {
+                            return isActive ? styles.isActive : styles.notActive
+                        }}
+                        to={"/category/anotadores"}
+                    >
+                        Anotadores
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        className={ ({ isActive }) => {
+                            return isActive ? styles.isActive : styles.notActive
+                        }}
+                        to={"/category/accesorios"}
+                    >
+                        Accesorios
+                    </NavLink>
+                </li>
+            </ul>
+        </nav>
+    )
+}
 
-export default Navbar;
+export default NavBar

@@ -1,8 +1,8 @@
-import React from 'react';
-import cartIcon from '../assets/cart.svg'; // Ajusta la ruta según sea necesario
-import '../styles/cartwidget.css';
+import React from "react";
+import cartIcon from "../assets/cart.svg";
+import "../styles/cartwidget.css";
 const CartWidget = () => {
-  const itemCount = 2; 
+  const itemCount = 2;
   return (
     <div className="cart-widget">
       <img src={cartIcon} alt="Cart" className="cart-icon" />
