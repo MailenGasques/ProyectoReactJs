@@ -1,11 +1,14 @@
 import React from "react";
-import styles from "../styles/navbar.css";
+import styles from "../styles/navbar.module.css";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../assets/logo.png";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
     return (
-        <nav>
-            <ul className={styles.list}>
+        <nav className={styles.navbar} >
+            <img src={logo} alt="logo" className={styles.logo} />
+            <ul className={styles.categories}>
                 <li>
                     <NavLink
                         className={ ({ isActive }) => {
@@ -13,7 +16,7 @@ const NavBar = () => {
                         }}
                         to={"/"}
                     >
-                        Home
+                        Inicio
                     </NavLink>
                 </li>
                 <li>
@@ -57,6 +60,7 @@ const NavBar = () => {
                     </NavLink>
                 </li>
             </ul>
+            <CartWidget/>
         </nav>
     )
 }

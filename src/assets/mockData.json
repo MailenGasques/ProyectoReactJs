@@ -1,47 +1,47 @@
 [
     {
         "id": 1,
-        "title": "Agenda 2024",
-        "price": 18500.00,
-        "description": "Agenda semana a la vista, ideal para organizar tus días.",
+        "title": "Agenda 2025",
+        "price": 25500,
+        "description": "Organiza tus días con estilo y conciencia. Esta agenda artesanal, hecha a mano, ofrece un diseño elegante y funcional, ideal para quienes buscan equilibrar la planificación con la creatividad. Cada hoja está elaborada con papel reciclado, respetando el medio ambiente y fomentando un estilo de vida sostenible. ¡Haz de cada día una obra de arte!",
         "category": "agendas",
-        "picture": "./artimg/agenda1.png",
+        "picture": "/artimg/agenda1.png",
         "rating": {
             "rate": 4.3,
-            "count": 140
+            "count": 80
         }
     },
     {
         "id": 2,
         "title": "Agenda perpetua",
-        "price": 18500.00,
-        "description": "Agenda semana a la vista, perpetua, iníciala cuando quieras.",
+        "price": 25500,
+        "description": "La agenda perpetua es la compañera perfecta para tu organización. Con un diseño versátil y atemporal, puedes comenzar a utilizarla en cualquier momento del año. Fabricada con materiales ecológicos y un toque artesanal, cada página te invita a plasmar tus ideas y sueños mientras cuidas de nuestro planeta.",
         "category": "agendas",
-        "picture": "./artimg/agenda3.png",
+        "picture": "/artimg/agenda3.png",
         "rating": {
             "rate": 4.3,
-            "count": 140
+            "count": 50
         }
     },
     {
         "id": 3,
         "title": "Lápiz plantable",
-        "price": 1000.00,
-        "description": "Lápiz clásico, ideal para escribir y dibujar con precisión, con semillas para plantar.",
+        "price": 1000,
+        "description": "Este lápiz es más que un simple instrumento de escritura; es una semilla de futuro. Hecho de madera sostenible, al final de su vida útil, puedes plantarlo y ver cómo crece una planta. Ideal para escritores, artistas y amantes de la naturaleza, cada trazo que dejes será una huella verde en el mundo.",
         "category": "accesorios",
-        "picture": "./artimg/lapizplantable.png",
+        "picture": "/artimg/lapizplantable.png",
         "rating": {
             "rate": 4.3,
-            "count": 140
+            "count": 300
         }
     },
     {
         "id": 4,
         "title": "Anotador rayado",
-        "price": 5500.00,
-        "description": "Anotador de notas, perfecto para tus ideas y recordatorios.",
+        "price": 5500,
+        "description": "Este anotador es ideal para capturar tus pensamientos, ideas y sueños. Hecho con papel reciclado de alta calidad, su diseño artesanal brinda una experiencia de escritura única y responsable. Lleva tus notas al siguiente nivel, sabiendo que cada página ayuda a cuidar del planeta.",
         "category": "anotadores",
-        "picture": "./artimg/anotadorray.png",
+        "picture": "/artimg/anotadorray.png",
         "rating": {
             "rate": 4.3,
             "count": 140
@@ -50,58 +50,58 @@
     {
         "id": 5,
         "title": "Anotador cuadriculado",
-        "price": 5500.00,
-        "description": "Anotador de notas, perfecto para tus ideas y recordatorios.",
+        "price": 5500,
+        "description": "Perfecto para esbozar ideas, dibujar o tomar notas, este anotador cuadriculado combina funcionalidad y estética. Fabricado con materiales ecológicos y un diseño que respeta la naturaleza, es la opción ideal para quienes valoran la creatividad y la sostenibilidad.",
         "category": "anotadores",
-        "picture": "./artimg/anotadorcuad.png",
+        "picture": "/artimg/anotadorcuad.png",
         "rating": {
             "rate": 4.3,
-            "count": 140
+            "count": 100
         }
     },
     {
         "id": 6,
-        "title": "Cuaderno A5 rayado",
-        "price": 5000.00,
-        "description": "Cuaderno de 100 hojas con papel ecológico rayado, perfecto para tomar apuntes.",
+        "title": "Pack libretas tapa blanda",
+        "price": 8000.00,
+        "description": "Set de tres libretas, rayada, cuadriculada y lisa, es ideal para llevar contigo en tus aventuras diarias, permite que captures tus ideas donde sea que vayas. Hechas con papel reciclado.",
         "category": "cuadernos",
-        "picture": "./artimg/cuadernoA5ray.png",
+        "picture": "/artimg/packcuadernotapablanda.png",
         "rating": {
             "rate": 4.3,
-            "count": 140
+            "count": 120
         }
     },
     {
         "id": 7,
         "title": "Anotador con espiral 10x15",
-        "price": 6500.00,
-        "description": "Anotador de notas con tapa dura, perfecto para tus ideas y recordatorios.",
+        "price": 6500,
+        "description": "Ideal para llevar a todas partes, este anotador con espiral es práctico y ecológico. Con tapas duras y papel reciclado, cada nota que tomes se convierte en parte de un esfuerzo más grande por cuidar nuestro entorno. ¡Haz de cada anotación una declaración de intenciones!",
         "category": "anotadores",
-        "picture": "./artimg/anotador1015.png",
+        "picture": "/artimg/anotador1015.png",
         "rating": {
             "rate": 4.3,
-            "count": 140
+            "count": 35
         }
     },
     {
         "id": 8,
         "title": "Pack Anotadores con imán",
-        "price": 4250.00,
-        "description": "Bloc de notas con hojas rayadas y cuadriculadas, ideal para la heladera y no olvidarte nada.",
+        "price": 9000,
+        "description": "Este pack incluye anotadores con hojas rayadas y cuadriculadas, perfectos para tener siempre a mano. Su diseño práctico y ecológico te permite dejar mensajes en la heladera, ayudando a que no olvides nada importante mientras contribuyes a un mundo más sostenible.",
         "category": "anotadores",
-        "picture": "./artimg/anotadorIman.png",
+        "picture": "/artimg/anotadorIman.png",
         "rating": {
             "rate": 4.3,
-            "count": 140
+            "count": 60
         }
     },
     {
         "id": 9,
         "title": "BOX 1",
-        "price": 34000.99,
-        "description": "Caja con productos para regalar en cualquier ocasión, contiene 6 productos y una linda presentación.",
+        "price": 20000,
+        "description": "Regala momentos especiales con nuestra caja que contiene 6 productos artesanales. Cada artículo está cuidadosamente elaborado, combinando calidad y diseño en una presentación hermosa y ecológica. Perfecta para cualquier ocasión, esta caja será un regalo inolvidable.",
         "category": "cuadernos",
-        "picture": "./artimg/box1.png",
+        "picture": "/artimg/box1.png",
         "rating": {
             "rate": 4.7,
             "count": 95
@@ -110,10 +110,10 @@
     {
         "id": 10,
         "title": "BOX 2",
-        "price": 34000.99,
-        "description": "Caja con productos para regalar en cualquier ocasión, contiene 6 productos y una linda presentación.",
+        "price": 20000,
+        "description": "Un regalo que deja huella. Esta caja incluye 6 productos artesanales, cada uno pensado para impactar positivamente en la vida de quien lo recibe. Hecho con amor y respeto por la naturaleza, cada detalle cuenta una historia que merece ser compartida.",
         "category": "cuadernos",
-        "picture": "./artimg/box2.png",
+        "picture": "/artimg/box2.png",
         "rating": {
             "rate": 4.3,
             "count": 140
@@ -123,9 +123,9 @@
         "id": 11,
         "title": "Cuaderno con espiral A5 liso",
         "price": 1200.00,
-        "description": "Cuaderno tapa dura con espiral, hojas lisas, ideal para dibujar.",
+        "description": "Este cuaderno de tapa dura y espiral es perfecto para plasmar tus ideas más creativas. Con hojas lisas, es ideal para dibujar o escribir libremente. Confeccionado de manera sostenible, este cuaderno no solo es una herramienta, sino una extensión de tu creatividad.",
         "category": "cuadernos",
-        "picture": "./artimg/cuadernoA5liso.png",
+        "picture": "/artimg/cuadernoA5liso.png",
         "rating": {
             "rate": 4.8,
             "count": 200
@@ -134,10 +134,10 @@
     {
         "id": 12,
         "title": "Cuaderno con espiral A5 rayado",
-        "price": 1200.00,
-        "description": "Cuaderno tapa dura con espiral, hojas rayadas, ideal para apuntes y notas.",
+        "price": 8000,
+        "description": "El cuaderno A5 rayado con espiral es un clásico moderno. Con su tapa dura y diseño práctico, es perfecto para estudiantes y profesionales. Cada hoja está fabricada con papel reciclado, lo que lo convierte en una elección responsable y estética.",
         "category": "cuadernos",
-        "picture": "./artimg/cuadernoA5ray.png",
+        "picture": "/artimg/cuadernoA5ray.png",
         "rating": {
             "rate": 4.0,
             "count": 300
@@ -145,11 +145,11 @@
     },
     {
         "id": 13,
-        "title": "Cuaderno tapa blanda cuadriculado",
-        "price": 2500.00,
-        "description": "Cuaderno tapa blanda, ideal para llevar a cualquier lugar en la mochila, cartera o el auto.",
+        "title": "Libreta cuadriculada",
+        "price": 3500,
+        "description": "Esta libreta cuadriculada es ideal para llevar contigo en tus aventuras diarias. Ligera y práctica, permite que captures tus ideas donde sea que vayas. Hecha con papel reciclado, es la opción perfecta para quienes valoran el diseño y la sostenibilidad.",
         "category": "cuadernos",
-        "picture": "./artimg/cuadernotbcuadriculado.png",
+        "picture": "/artimg/libretacudriculado.png",
         "rating": {
             "rate": 4.3,
             "count": 160
@@ -157,11 +157,11 @@
     },
     {
         "id": 14,
-        "title": "Cuaderno tapa blanda rayado",
-        "price": 2500.00,
-        "description": "Cuaderno tapa blanda, ideal para llevar a cualquier lugar en la mochila, cartera o el auto.",
+        "title": "Libreta rayada",
+        "price": 3500,
+        "description": "Con un diseño elegante y práctico, esta libreta rayada es perfecta para tus notas y reflexiones. Su tapa blanda la hace liviana y fácil de llevar, mientras que su papel ecológico garantiza que cuidas del planeta. ¡Ideal para inspirarte en cualquier lugar!",
         "category": "cuadernos",
-        "picture": "./artimg/cuadernoA5ray.png",
+        "picture": "/artimg/libretatbrayado.png",
         "rating": {
             "rate": 4.5,
             "count": 180
@@ -170,10 +170,10 @@
     {
         "id": 15,
         "title": "Cuaderno universitario",
-        "price": 2500.00,
-        "description": "Cuaderno tapa blanda, con espiral tamaño A4, perfecto para llevar a la escuela o facultad.",
+        "price": 12000,
+        "description": "Este cuaderno universitario de tapa blanda es perfecto para tus clases y estudios. Su espiral permite que se abra completamente, facilitando la escritura en cualquier situación. Con un enfoque en la sostenibilidad, cada página está hecha con papel reciclado, ayudando a cuidar el planeta mientras aprendes.",
         "category": "cuadernos",
-        "picture": "./artimg/cuadernouniversitario.png",
+        "picture": "/artimg/cuadernouniversitario.png",
         "rating": {
             "rate": 4.1,
             "count": 200
@@ -182,10 +182,10 @@
     {
         "id": 16,
         "title": "Lapicera de madera",
-        "price": 6.75,
-        "description": "Lapicera retráctil color negro.",
+        "price": 2500,
+        "description": "Esta lapicera retráctil de madera combina funcionalidad y estética. Hecha de forma artesanal, es un accesorio esencial para quienes aprecian la escritura y el diseño eco-amigable. Ideal para complementar tus cuadernos y anotadores, añadiendo un toque natural a tu rutina.",
         "category": "accesorios",
-        "picture": "./artimg/lapicera.png",
+        "picture": "/artimg/lapicera.png",
         "rating": {
             "rate": 4.6,
             "count": 110
@@ -194,10 +194,10 @@
     {
         "id": 17,
         "title": "Maceta biodegradable",
-        "price": 4.00,
-        "description": "Macetas artesanales, realizadas con papel reciclado.",
+        "price": 2000,
+        "description": "Estas macetas artesanales están hechas de papel reciclado, perfectas para plantar tus semillas favoritas. Con un diseño ecológico y estéticamente atractivo, son ideales para jardineros principiantes y experimentados. Dale vida a tu hogar mientras cuidas del planeta.",
         "category": "accesorios",
-        "picture": "./artimg/maceta viodegradable.png",
+        "picture": "/artimg/maceta viodegradable.png",
         "rating": {
             "rate": 4.0,
             "count": 220
@@ -206,10 +206,10 @@
     {
         "id": 18,
         "title": "Pack cuadernos A5 tapa dura",
-        "price": 14.99,
-        "description": "Tres cuadernos A5 tapa dura, con espiral, rayado, cuadriculado y liso.",
+        "price": 22000,
+        "description": "Este pack incluye tres cuadernos A5 de tapa dura, ideales para cualquier ocasión. Con una mezcla de hojas rayadas, cuadriculadas y lisas, son perfectos para estudiantes y creativos. Fabricados de forma sostenible, son una excelente opción para quienes buscan calidad y responsabilidad.",
         "category": "cuadernos",
-        "picture": "./artimg/packcuadernoa5.png",
+        "picture": "/artimg/packcuadernoa5.png",
         "rating": {
             "rate": 4.4,
             "count": 130
@@ -218,10 +218,10 @@
     {
         "id": 19,
         "title": "Pack Full",
-        "price": 5.50,
-        "description": "Set de 3 cuadernos A5, dos anotadores tapa dura y un anotador tapa blanda.",
+        "price": 35000,
+        "description": "Este set incluye 3 cuadernos A5, junto con dos anotadores de tapa dura y uno de tapa blanda. Cada pieza está elaborada de forma artesanal, combinando calidad y diseño. Perfecto para quienes buscan un conjunto completo y sostenible para organizar sus ideas.",
         "category": "cuadernos",
-        "picture": "./artimg/setfull.png",
+        "picture": "/artimg/setfull.png",
         "rating": {
             "rate": 4.5,
             "count": 170
@@ -230,10 +230,10 @@
     {
         "id": 20,
         "title": "Stickers Florales",
-        "price": 8.25,
-        "description": "Pack de stickers para decorar.",
+        "price": 2000,
+        "description": "Decora tu mundo con estos encantadores stickers florales. Perfectos para personalizar tus cuadernos, laptops o cualquier superficie, cada pack está hecho de materiales ecológicos, permitiendo que tu estilo refleje tu compromiso con el medio ambiente. ¡Dale un toque especial a tu día a día!",
         "category": "accesorios",
-        "picture": "./artimg/stickerfloral.png",
+        "picture": "/artimg/stickerfloral.png",
         "rating": {
             "rate": 4.3,
             "count": 140

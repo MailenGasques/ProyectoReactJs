@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px; 
+    background-color: #f8ddcc;
+    color: black;
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.instagramLogo {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 10px; 
+}
+
+.instagramText {
+    font-size: 15px; 
+}
