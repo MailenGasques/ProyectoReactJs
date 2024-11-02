@@ -1,0 +1,45 @@
+.cartItem {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.image {
+    width: 80px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.itemDetails {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+}
+
+.price, .quantity {
+    margin: 5px 0;
+}
+
+.buttonDelete {
+    background-color: #d9534f; 
+    color: white; 
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buttonDelete:hover {
+    background-color: #c9302c; 
+}

@@ -1,38 +1,54 @@
-import React, { useState, useEffect } from "react";
-import styles from "../styles/itemDetail.module.css"; 
+import React, { useState, useContext } from "react";
+import ItemCount from "./ItemCount";
+import { Cart } from "../context/CartProvider";
+import { NavLink } from "react-router-dom";
+import styles from '../styles/itemDetail.module.css'; 
+import Swal from "sweetalert2";
 
 const ItemDetail = ({ product }) => {
-    const [count, setCount] = useState(1);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 2000);
-
-        return () => clearTimeout(timer);
-    }, []);
-
-    if (loading) {
-        return <h3>Cargando...</h3>;
+    if (!product) {
+        return <h2>El producto no existe</h2>;
     }
 
-    const handleIncrease = () => setCount(count + 1);
-    const handleDecrease = () => setCount(count > 1 ? count - 1 : 1);
+    const { addCart } = useContext(Cart);
+    const [itemCountVisibility, setItemCountVisibility] = useState(true);
+    const stock = product.stock || 0;
+
+    const handleCart = (quantity) => {
+        setItemCountVisibility(false);
+        addCart(product, quantity);
+
+        Swal.fire({
+            icon: "success",
+            title: "Se agregó el producto al carrito",
+            text: `Agregaste ${product.title} - Unidades: ${quantity}`,
+            confirmButtonText: "Aceptar",
+        });
+    };
 
     return (
         <div className={styles.card}>
             <img src={product.picture} alt={product.title} className={styles.image} />
             <div className={styles.details}>
-                <h2>{product.title}</h2>
-                <p>{product.description}</p>
-                <p>Precio: ${product.price.toFixed(2)}</p>
-                <div className={styles.counter}>
-                    <button onClick={handleDecrease}>-</button>
-                    <span>{count}</span>
-                    <button onClick={handleIncrease}>+</button>
-                    <button className={styles.addToCart}>Agregar al carrito</button>
-                </div>
+                <h1 className={styles.title}>{product.title}</h1>
+                <span className={styles.description}>{product.description}</span>
+                
+                {stock === 0 ? (
+                    <h3 className={styles.outOfStock}>No hay unidades disponibles en este momento. Por favor, vuelva a consultar más tarde.</h3>
+                ) : (
+                    <>
+                        {itemCountVisibility ? (
+                            <div className={styles.itemCountContainer}>
+                                <ItemCount inicial={1} stock={stock} addCart={handleCart} />
+                            </div>
+                        ) : (
+                            <div className={styles.buttonsContainer}>
+                                <NavLink to="/cart" className={styles.botonIrAlCarrito}>IR AL CARRITO</NavLink>
+                                <NavLink to="/" className={styles.botonVolverHome}>VOLVER AL INICIO</NavLink>
+                            </div>
+                        )}
+                    </>
+                )}
             </div>
         </div>
     );

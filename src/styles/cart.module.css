@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .linkInicio {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 20px;
+        margin: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+
+        &:active {
+            background-color: wheat;
+          }
+    }
+
+    .emptyButton {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 20px;
+        margin: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+
+        &:active {
+            background-color: wheat;
+          }
+    }
+
+    .buttonCheckout {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 20px;
+        margin: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+
+        &:active {
+            background-color: wheat;
+          }
+    }
+}

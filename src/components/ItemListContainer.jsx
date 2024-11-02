@@ -1,47 +1,68 @@
-import React, { useEffect, useState } from "react"
-import mockProducts from "../assets/mockData.json"
-import ItemList from "./ItemList"
-import { useParams } from "react-router-dom"
+import React, { useEffect, useState } from "react"; 
+import { db } from "../firebase/config";
+import { collection, query, where, getDocs } from "firebase/firestore";
+import { useParams } from "react-router-dom";
+import Swal from "sweetalert2";
+import ItemList from "./ItemList";
+import styles from "../styles/itemlistcontainer.module.css";
 
 const ItemListContainer = () => {
-    const [products, setProducts] = useState([])
-    const [loading, setLoading] = useState(false)
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    const { categoryId } = useParams()
+  const { categoryId } = useParams();
 
-    useEffect(() => {
-        const promise1 = new Promise((res, rej) => {
-            setTimeout(() => {
-                res(mockProducts)
-            }, 1000)
-        })
+  useEffect(() => {
+    setLoading(true);
+    (async () => {
+      try {
+        let productFilter = [];
 
-        try {
-            const getProducts = async () => {
-                setLoading(true)
-                const products = await promise1
-                let productsFiltered
-                if (categoryId) {
-                    productsFiltered = products.filter(
-                        (product) => product.category === categoryId
-                    )
-                } else {
-                    productsFiltered = products
-                }
-                setProducts(productsFiltered)
-                setLoading(false)
-            }
+        if (categoryId) {
+          const q = query(
+            collection(db, "products"),
+            where("category", "==", categoryId)
+          );
 
-            getProducts()
-        } catch (error) {
+          const querySnapshot = await getDocs(q);
+          querySnapshot.forEach((doc) => {
+            productFilter.push({ id: doc.id, ...doc.data() });
+          });
+        } else {
+          const querySnapshot = await getDocs(collection(db, "products"));
+          querySnapshot.forEach((doc) => {
+            productFilter.push({ id: doc.id, ...doc.data() });
+          });
         }
+        setProducts(productFilter);
+      } catch (error) {
+        Swal.fire({
+          title: "Error!",
+          text: "Ocurrió un error al cargar los productos: " + error.message,
+          icon: "error",
+          confirmButtonText: "Aceptar",
+        });
+      } finally {
+        setLoading(false);
+      }
+    })();
+  }, [categoryId]);
 
-    }, [categoryId])
+  if (!loading && products.length === 0) {
+    return <h1>No se encontraron productos</h1>;
+  }
 
+  return (
+    <>
+      {loading ? (
+        <h1>Aguarde mientras se carga el sitio web...</h1>
+      ) : (
+        <div>
+          <ItemList products={products} />
+        </div>
+      )}
+    </>
+  );
+};
 
-    return loading ?
-        <h3> Cargando... </h3> :
-        <ItemList products={products} />
-}
-
-export default ItemListContainer
+export default ItemListContainer;

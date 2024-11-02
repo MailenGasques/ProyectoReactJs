@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useContext, useMemo } from "react"; 
 import cartIcon from "../assets/cart.svg";
 import styles from "../styles/cartwidget.module.css"; 
+import { Cart } from '../context/CartProvider'; 
+import { NavLink } from 'react-router-dom';
 
 const CartWidget = () => {
-  const itemCount = 2;
-  return (
-    <div className={styles["cart-widget"]}> 
-      <img src={cartIcon} alt="Cart" className={styles["cart-icon"]} /> 
-      <span className={styles["notification"]}>{itemCount}</span> 
-    </div>
-  );
+    const { cart } = useContext(Cart); 
+
+    const cantidadTotal = useMemo(() => {
+        return cart.reduce((acumulador, item) => acumulador + item.quantity, 0); 
+    }, [cart]);
+     
+    return (
+        <NavLink to="/cart" className={styles.cartWidget}>
+            <img src={cartIcon} alt="Ícono del carrito" />
+            <span>({cantidadTotal})</span>
+        </NavLink>
+    );
 };
 
 export default CartWidget;
