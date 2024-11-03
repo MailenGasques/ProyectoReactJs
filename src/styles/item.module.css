@@ -19,3 +19,37 @@
     height: 250px;
     object-fit: cover;
 }
+
+.buttonInfo {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5aa7c; 
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center; 
+}
+
+.buttonInfo:hover {
+    background-color: #f8ddcc; 
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.itemImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+

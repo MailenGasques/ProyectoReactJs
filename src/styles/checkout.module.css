@@ -1,41 +1,40 @@
 .contenedorCheckout {
-    max-width: 600px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    border: 2px solid red;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
 
-h1 {
-    text-align: center;
-    color: #333;
 }
 
 .contenedorFormulario {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; 
+    margin: 10px;
+    padding-inline: 10px;
+    gap: 20px; 
 }
 
-input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
+.input {
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .botonSubmitFormulario {
-    width: 100%;
-    padding: 12px;
-    background-color: #28a745;
-    color: white;
+    background-color: #f5aa7c; 
+    color: black; 
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 20px; 
 }
 
 .botonSubmitFormulario:hover {
-    background-color: #218838;
+    background-color: #f8ddcc; 
 }

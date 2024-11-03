@@ -10,7 +10,7 @@ const Item = ({item}) => {
 
         <span>${item.price}</span>
         <NavLink to={`/detail/${item.id}`}>
-          <button>Mas Informacion</button>
+          <button className={styles.buttonInfo}>Mas Información</button>
         </NavLink>
     </div>
   )

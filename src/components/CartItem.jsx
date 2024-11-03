@@ -8,8 +8,10 @@ const CartItem = ({ item, deleteProduct }) => {
             <div className={styles.itemDetails}>
                 <h3 className={styles.title}>{item.title}</h3>
                 <p className={styles.description}>{item.description}</p>
-                <p className={styles.price}>Precio: ${item.price}</p>
-                <p className={styles.quantity}>Cantidad: {item.quantity}</p>
+                <div className={styles.priceQuantity}>
+                    <p className={styles.price}>Precio: ${item.price}</p>
+                    <p className={styles.quantity}>Cantidad: {item.quantity}</p>
+                </div>
                 <button 
                     className={styles.buttonDelete} 
                     onClick={() => deleteProduct(item.id)}

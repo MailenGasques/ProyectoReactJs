@@ -1,45 +1,67 @@
 .cartItem {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    display: flex; 
+    width: 100%;
+    max-width: 100%; 
+    border: 1px solid rgb(161, 48, 48); 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    padding: 15px; 
+    margin: 15px 0; 
+    align-items: flex-start; 
+    overflow: hidden; 
+    box-sizing: border-box; 
 }
 
 .image {
-    width: 80px; 
-    height: auto;
-    margin-right: 10px;
+    width: 200px; 
+    height: auto; 
+    border-radius: 5px; 
+    margin-right: 20px; 
+    flex-shrink: 0; 
 }
 
 .itemDetails {
-    flex-grow: 1;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.4em; 
+    margin: 0; 
+    color: #333; 
 }
 
 .description {
-    font-size: 14px;
-    color: #555;
+    font-size: 0.9em; 
+    color: #666; 
+    margin: 5px 0; 
+}
+
+.priceQuantity {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 10px 0; 
 }
 
 .price, .quantity {
-    margin: 5px 0;
+    font-weight: bold;
+    margin: 0; 
 }
 
 .buttonDelete {
-    background-color: #d9534f; 
+    background-color: rgb(161, 48, 48); 
     color: white; 
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    align-self: center; 
 }
 
 .buttonDelete:hover {
-    background-color: #c9302c; 
+    background-color: rgb(130, 30, 30); 
+    transform: scale(1.05); 
 }

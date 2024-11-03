@@ -3,7 +3,7 @@ import { Cart as CartContext } from '../context/CartProvider';
 import { db } from "../firebase/config";
 import { collection, addDoc, updateDoc, doc, serverTimestamp } from 'firebase/firestore';
 import Swal from 'sweetalert2';
-import "../styles/checkout.module.css";
+import styles from "../styles/checkout.module.css"; 
 
 const Checkout = () => {
     const { cart, emptyCart } = useContext(CartContext); 
@@ -71,7 +71,7 @@ const Checkout = () => {
     };
 
     return (
-        <div className='contenedorCheckout'>
+        <div className={styles.contenedorCheckout}>
             <h1>FINALIZAR COMPRA</h1>
             {cargando ? (
                 <div>
@@ -79,13 +79,14 @@ const Checkout = () => {
                 </div>
             ) : ordenId ? (
                 <div>
-                    <h2>Gracias por tu compra! La orden es número: {ordenId}</h2>
+                    <h2>Gracias por tu compra! el codigo de su orden es: {ordenId}</h2>
                 </div>
             ) : (
-                <div className='contenedorFormulario'>
+                <div className={styles.contenedorFormulario}>
                     <h2>Ingrese sus datos de facturación</h2>
                     <form onSubmit={manejarSubmit}>
                         <input
+                            className={styles.input}
                             type="text"
                             placeholder="Nombre"
                             value={nombre}
@@ -93,6 +94,7 @@ const Checkout = () => {
                             required
                         />
                         <input
+                            className={styles.input}
                             type="text"
                             placeholder="Apellido"
                             value={apellido}
@@ -100,6 +102,7 @@ const Checkout = () => {
                             required
                         />
                         <input
+                            className={styles.input}
                             type="email"
                             placeholder="Email"
                             value={email}
@@ -107,6 +110,7 @@ const Checkout = () => {
                             required
                         />
                         <input
+                            className={styles.input}
                             type="email"
                             placeholder="Confirmar Email"
                             value={confirmarEmail}
@@ -114,6 +118,7 @@ const Checkout = () => {
                             required
                         />
                         <input
+                            className={styles.input}
                             type="tel"
                             placeholder="Teléfono"
                             value={telefono}
@@ -121,13 +126,14 @@ const Checkout = () => {
                             required
                         />
                         <input
+                            className={styles.input}
                             type="text"
                             placeholder="Domicilio"
                             value={domicilio}
                             onChange={(evento) => setDomicilio(evento.target.value)}
                             required
                         />
-                        <button className='botonSubmitFormulario' type="submit">Confirmar Compra</button>
+                        <button className={styles.botonSubmitFormulario} type="submit">Confirmar Compra</button>
                     </form>
                 </div>
             )}

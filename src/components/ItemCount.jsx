@@ -20,7 +20,7 @@ const ItemCount = ({ stock, inicial, addCart }) => {
         <div className={styles.container}>
             <div className={styles.operators}>
                 <button className={styles.button} onClick={reducirCantidad}>-</button>
-                <h3 className="cantidadProducto">Unidades: {count}</h3>
+                <h3 className="cantidadProducto"> {count}</h3>
                 <button className={styles.button} onClick={aumentarCantidad}>+</button>
             </div>
             <button className={styles.button} onClick={() => addCart(count)} disabled={count === 0 || stock === 0}> {/* Comprobación adicional */}

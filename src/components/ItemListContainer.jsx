@@ -4,7 +4,6 @@ import { collection, query, where, getDocs } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import ItemList from "./ItemList";
-import styles from "../styles/itemlistcontainer.module.css";
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
